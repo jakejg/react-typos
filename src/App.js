@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import 'h8k-components';
 
 import AutocorrectTextarea from './components/AutocorrectTextarea';
 const title = "Autocorrection App";
 
-class App extends Component {
-  render() {
-    const { corrections } = this.props;
+const App = ({corrections}) => {
+
     return (
       <div>
         <h8k-navbar header={title}></h8k-navbar>
@@ -17,6 +16,5 @@ class App extends Component {
       </div>
     );
   }
-}
 
 export default App;
